@@ -63,7 +63,7 @@
             android:id="@+id/btnMinus"
             android:layout_width="54dp"
             android:layout_height="50dp"
-            android:layout_marginStart="30dp"
+            android:layout_marginStart="15dp"
             android:layout_marginBottom="20dp"
             android:onClick="minus"
             android:text="-" />
@@ -84,7 +84,7 @@
             android:layout_marginStart="44dp"
             android:layout_marginBottom="20dp"
             android:onClick="multiply"
-            android:text="/" />
+            android:text="*" />
 
         <Button
             android:id="@+id/btnDivide"
@@ -93,7 +93,7 @@
             android:layout_marginStart="44dp"
             android:layout_marginBottom="20dp"
             android:onClick="divide"
-            android:text="*" />
+            android:text="/" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
