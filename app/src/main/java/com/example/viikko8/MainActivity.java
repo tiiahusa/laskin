@@ -15,7 +15,6 @@ public class MainActivity extends AppCompatActivity {
     private EditText secondNumber;
     private TextView answer;
 
-    private float setter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,22 +28,22 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void plus (View view) {
-        setter = (Integer.parseInt(firstNumber.getText().toString()) + Integer.parseInt(secondNumber.getText().toString()));
-        answer.setText(Float.toString(setter));
+        int setter = (Integer.parseInt(firstNumber.getText().toString()) + Integer.parseInt(secondNumber.getText().toString()));
+        answer.setText(Integer.toString(setter));
     }
 
     public void minus (View view) {
-        setter = (Integer.parseInt(firstNumber.getText().toString()) - Integer.parseInt(secondNumber.getText().toString()));
-        answer.setText(Float.toString(setter));
+        int setter = (Integer.parseInt(firstNumber.getText().toString()) - Integer.parseInt(secondNumber.getText().toString()));
+        answer.setText(Integer.toString(setter));
     }
 
     public void divide (View view) {
-        setter = (Float.parseFloat(firstNumber.getText().toString()) / Float.parseFloat(secondNumber.getText().toString()));
+        float setter = (Float.parseFloat(firstNumber.getText().toString()) / Float.parseFloat(secondNumber.getText().toString()));
         answer.setText(Float.toString(setter));
     }
 
     public void multiply (View view) {
-        setter = (Integer.parseInt(firstNumber.getText().toString()) * Integer.parseInt(secondNumber.getText().toString()));
-        answer.setText(Float.toString(setter));
+        int setter = (Integer.parseInt(firstNumber.getText().toString()) * Integer.parseInt(secondNumber.getText().toString()));
+        answer.setText(Integer.toString(setter));
     }
 }
